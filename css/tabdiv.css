@@ -1,0 +1,298 @@
+:root {
+  --main-og-color: rgb(255, 154, 21);
+}
+
+.symbolheader {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  padding: 260px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  height: 580px;
+}
+
+.boxes img {
+  height: 100px;
+  margin: 0px;
+}
+
+.box h3 {
+  padding: 50px;
+  color: white;
+}
+
+.box {
+  text-align: center;
+  padding: 0rem 2rem;
+}
+
+.buttonforsymbolsdiv {
+  text-align: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 10rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#symbolsquestion {
+  font-size: 25px;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+@media (max-width: 1609px) {
+  .boxes {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  #symbolsquestion {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 1560px) {
+  .boxes {
+    height: 600px;
+  }
+}
+
+@media (max-width: 1460px) {
+  .boxes {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  #symbolsquestion {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 1308px) {
+  .boxes {
+    padding: 200px;
+    padding-top: 40px;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 1139px) {
+  .boxes {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 1099px) {
+  .boxes {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 100px;
+    padding-top: 40px;
+
+    height: 600px;
+  }
+}
+
+@media (max-width: 989px) {
+  .boxes {
+    height: 880px;
+  }
+  .buttonforsymbolsdiv {
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 10rem;
+  }
+
+  #symbolsquestion {
+    font-size: 23px;
+    padding: 50px;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 819px) {
+  .boxes {
+    height: 750px;
+    overflow: visible;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .boxes img {
+    height: 100px;
+    margin: 0;
+  }
+  .box h3 {
+    padding: 20px;
+  }
+
+  #symbolsquestion {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 719px) {
+  .boxes {
+    overflow: visible;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    height: 1100px;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: left;
+    text-align: left;
+    align-items: left;
+  }
+
+  .boxes img {
+    height: 140px;
+    margin: 0;
+  }
+
+  .box h3 {
+    padding-left: 0;
+    margin: 0;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+@media (max-width: 701px) {
+  .boxes {
+    overflow: visible;
+    height: 1400px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 50px;
+  }
+
+  .box h3 {
+    padding: 0px;
+    align-items: left;
+    text-align: left;
+    margin: 10px;
+  }
+  .boxes img {
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+  #symbolsquestion {
+    font-size: 25px;
+    padding: 0px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 544px) {
+  .boxes img {
+    height: 70px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .boxes {
+    overflow: visible;
+    height: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 50px;
+  }
+
+  #symbolsquestion {
+    font-size: 25px;
+    padding: 0px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 475px) {
+  .boxes img {
+    height: 70px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .boxes {
+    overflow: visible;
+    height: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 10px;
+  }
+}
+
+@media (max-width: 385px) {
+  .boxes img {
+    height: 65px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .boxes {
+    overflow: visible;
+    height: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 0px;
+  }
+
+  .boxes h3 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .boxes img {
+    height: 65px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .boxes {
+    overflow: visible;
+    height: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .boxes h3 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 327px) {
+  .boxes img {
+    height: 65px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .boxes {
+    overflow: visible;
+    height: 750px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .boxes h3 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .buttonforsymbolsdiv {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1rem;
+    padding-bottom: 10rem;
+  }
+}

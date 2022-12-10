@@ -1,0 +1,174 @@
+.navBar {
+  z-index: 3;
+  width: 350px;
+  height: 100%;
+  background-color: #070b0e;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.change {
+  right: 0;
+}
+
+.orange {
+  color: var(--main-og-color);
+}
+
+.hamburger-menu {
+  width: 35px;
+  position: fixed;
+  top: 50px;
+  right: 60px;
+  cursor: pointer;
+  /* display: flex;
+    flex-direction: column; */
+}
+
+.line {
+  width: 40px;
+  height: 4.1px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  margin: 8px;
+  transition: all 1s;
+}
+
+.change .line-1 {
+  background-color: var(--main-og-color);
+  background-color: var(--main-og-color);
+  transform: rotateZ(-45deg) translate(-8px, 8px);
+}
+.change .line-3 {
+  background-color: var(--main-og-color);
+  transform: rotateZ(45deg) translate(-8px, -8px);
+}
+
+.change .line-2 {
+  background-color: var(--main-og-color);
+
+  opacity: 0;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: var(--main-og-color);
+}
+
+li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+/* TÄhän jotain  */
+
+.navBar {
+  z-index: 3;
+  width: 350px;
+  height: 100%;
+  background-color: #070b0e;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.change {
+  right: 0;
+}
+
+.hamburger-menu {
+  width: 35px;
+  position: fixed;
+  top: 50px;
+  right: 60px;
+  cursor: pointer;
+  /* display: flex;
+    flex-direction: column; */
+}
+
+.line {
+  width: 40px;
+  height: 4.1px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  margin: 8px;
+  transition: all 1s;
+}
+
+.change .line-1 {
+  background-color: var(--main-og-color);
+  background-color: var(--main-og-color);
+  transform: rotateZ(-45deg) translate(-8px, 8px);
+}
+.change .line-3 {
+  background-color: var(--main-og-color);
+  transform: rotateZ(45deg) translate(-8px, -8px);
+}
+
+.change .line-2 {
+  background-color: var(--main-og-color);
+
+  opacity: 0;
+}
+
+.nav-list li {
+  margin: 6vh;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: var(--main-og-color);
+}
+
+li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .navBar {
+    z-index: 3;
+    width: 300px;
+    height: 100%;
+    background-color: #070b0e;
+    position: fixed;
+    top: 0;
+    right: -120%;
+  }
+
+  .change {
+    right: 0;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  .nav-list li {
+    margin: 5vh;
+  }
+}

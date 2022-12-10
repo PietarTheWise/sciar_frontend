@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+  font-family: "Quicksand";
+  font-weight: normal;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --main-og-color: rgb(255, 154, 21);
+}
+
+body {
+  background: #1d303a;
+  line-height: 1.4;
+}
+
+/* NAVBAR */
+
+.info {
+  padding: 50px;
+}
+
+.header {
+  display: grid;
+  grid-gap: 30px;
+  height: 950px;
+  /* padding-bottom: 100px; */
+  grid-template-columns: repeat(2, 1fr);
+  /* padding: 1rem; */
+  align-items: center;
+  justify-items: center;
+  /* border-bottom: 1px solid white; */
+  text-align: center;
+}
+
+.header p {
+  padding: 40px;
+  padding-left: 100px;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+  color: #ffffff;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.container {
+  border: solid 1px #526169;
+  width: 690px;
+  /* margin: 60px auto; */
+  position: absolute;
+  /* position: absolute; */
+}
+
+.containerTwo {
+  border: solid 1px #526169;
+  width: 690px;
+  /* margin: 60px auto; */
+  height: 750px;
+  /* position: relative; */
+  /* position: absolute; */
+  /* padding: 37.5px; */
+  padding-bottom: 10px;
+  /* padding-top: 25px; */
+  margin: 20px 0;
+}
+
+form {
+  padding: 37.5px;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  margin: 20px 0;
+}
+
+.hidden {
+  visibility: hidden;
+  /* transition: ease-in 1s; */
+  /* height: 0; */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.buttonclick {
+  border-bottom: solid 2px #fff;
+  transition: cubic-bezier(0.6, -0.28, 0.535, 0.045) 0.2s;
+}
+/* Tästä ylöspäin */
+
+.underline {
+  border-bottom: solid 2px #fff;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.email {
+  float: right;
+  width: 45%;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #fff;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+
+  border-radius: 0;
+}
+
+.message {
+  float: none;
+}
+
+.consent {
+  text-align: left;
+  padding: 30px;
+  -webkit-appearance: none;
+}
+
+.name {
+  float: left;
+  width: 45%;
+}
+
+select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.telephone {
+  width: 100%;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+:-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+#form_button {
+  background: none;
+  border: solid 1px #fff;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 20px 60px;
+  text-transform: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#form_button:hover {
+  color: var(--main-og-color);
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--main-og-color);
+  transition: linear 0.2s;
+}
+
+#form_button:active,
+#form_button:focus {
+  outline: none;
+}
+
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+.adresses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.left {
+  text-align: left;
+  padding-top: 50px;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #526169;
+  background: #1d303a;
+}
+
+::selection {
+  color: #526169;
+  background: #1d303a5d;
+}
+
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 600px;
+    /* height: 600px; */
+  }
+  .containerTwo {
+    width: 600px;
+    /* height: 600px; */
+  }
+
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
+    padding: 0;
+    margin: 10px;
+  }
+
+  .buttons {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header p {
+    padding: 40px;
+    padding-left: 40px;
+  }
+
+  .container {
+    border: solid 1px #526169;
+    width: 550px;
+    /* margin: 60px auto; */
+    margin-right: 50px;
+    position: absolute;
+  }
+
+  .containerTwo {
+    border: solid 1px #526169;
+    width: 550px;
+    /* margin: 60px auto; */
+    /* margin-right: 50px; */
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container {
+    /* width: 100%; */
+    width: 700px;
+  }
+  .containerTwo {
+    padding: 0;
+    width: 700px;
+
+    /* width: 100%; */
+  }
+
+  .buttons {
+    width: 700px;
+  }
+
+  .header {
+    height: 1408px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 600px;
+  }
+
+  .containerTwo {
+    width: 600px;
+  }
+
+  .buttons {
+    width: 600px;
+  }
+
+  .header {
+    display: grid;
+    grid-gap: 30px;
+    padding-bottom: 100px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+    /* border-bottom: 1px solid white; */
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 626px) {
+  .container {
+    width: 500px;
+  }
+
+  .containerTwo {
+    width: 500px;
+  }
+
+  .buttons {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .container {
+    width: 400px;
+  }
+
+  .containerTwo {
+    width: 400px;
+  }
+
+  .buttons {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  .underline {
+    width: 68px;
+  }
+
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .underline {
+    width: 53px;
+  }
+
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
+    font-size: 0.875em;
+  }
+  .header {
+    height: 1508px;
+  }
+
+  .infot-2 {
+    height: 800px;
+  }
+  .container {
+    width: 320px;
+  }
+
+  .containerTwo {
+    width: 320px;
+  }
+  .buttons {
+    width: 320px;
+  }
+  .adresses {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  p {
+    font-size: 14px;
+  }
+  .container {
+    width: 320px;
+  }
+
+  .containerTwo {
+    width: 320px;
+  }
+  .buttons {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
+    font-size: 13px;
+  }
+  .info {
+    padding: 50px;
+    padding-bottom: 0px;
+  }
+
+  .header {
+    height: 1700px;
+  }
+
+  .container {
+    width: 280px;
+  }
+
+  .containerTwo {
+    width: 280px;
+  }
+
+  .buttons {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .change {
+    right: 0;
+  }
+
+  .header {
+    height: 1908px;
+  }
+  .container {
+    width: 240px;
+  }
+
+  .containerTwo {
+    width: 240px;
+  }
+  .buttons {
+    width: 240px;
+  }
+}

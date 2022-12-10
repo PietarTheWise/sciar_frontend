@@ -1,0 +1,225 @@
+<link rel="stylesheet" href='css/contact.css' />
+<link rel="stylesheet" href='css/navbar.css' />
+
+<script
+  async
+  defer
+  src=""
+></script>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+  .footerEnd {
+    height: 20px;
+    background-color: #070b0e;
+    text-align: center;
+  }
+
+  .footerEnd > p {
+    color: #1d303a;
+    text-align: center;
+    padding-bottom: 0;
+    line-height: 0;
+  }
+</style>
+
+
+<div class="navContainer">
+	<nav class="navBar">
+	  <div class="hamburger-menu">
+		<div class="line line-1"></div>
+		<div class="line line-2"></div>
+		<div class="line line-3"></div>
+	  </div>
+  
+	  <ul class="nav-list">
+		<li class="nav-item">
+		  <a href='/index.html' class="nav-link">Home</a>
+		</li>
+		<li class="nav-item">
+		  <a href='/index.html#WhatWeDo' id="#WhatWeDo" class="nav-link">What we do</a>
+		</li>
+		<li class="nav-item">
+		  <a href='/index.html#Co-Pilot' id="" class="nav-link">Sciar Co-Pilot</a>
+		</li>
+		<li class="nav-item">
+		  <a href='/index.html#Team' id="" class="nav-link">Team</a>
+		</li>
+		<li class="nav-item">
+		  <a href='/index.html#IndustryExamples' id="" class="nav-link"
+			>Industry Examples</a
+		  >
+		</li>
+		<li class="nav-item">
+		  <a href='/index.html#ProjectGemini' id="" class="nav-link"
+			>Gemini Project</a
+		  >
+		</li>
+		<li class="nav-item">
+		  <a href='contact.html' class="nav-link">Contact</a>
+		</li>
+		<li class="nav-item">
+		  <a
+			href="http://vault.sciar.co"
+			class="nav-link"
+			>Sign in Sciar Vault</a
+		  >
+		</li>
+	  </ul>
+	</nav>
+  </div>
+
+<div id="map">
+	<h1>Map api key missing</h1>
+</div>
+
+<div class="header">
+
+  <div class="info">
+    <h3 class="orange">
+      Wish to learn more about us? Want to book a free demo or get a price
+      quote?
+    </h3>
+    <br />
+    <h3 class="orange">
+      Contact us directly using the contact from. Want to visit us?
+      <br />
+      <br />
+      You’re welcome and you’ll find us at:
+    </h3>
+    <div class="adresses">
+      <h3 class="left">
+        Random Health Hub<br />
+        123 Spring Field Avenue <br />
+        Building 14
+      </h3>
+      <h3 class="left">
+        Space XR Center<br />
+        123 Evergreen Terrace <br />
+        4th Floor
+      </h3>
+    </div>
+    <h5 class="left">
+      CEO & Co-Founder
+      <br />
+      	Ceo@sciar.co
+      <br />
+      +111 111 111
+    </h5>
+  </div>
+
+  <div>
+    <div class="buttons">
+      <h1 class="button buttonclick">Inquire</h1>
+      <h1 class="button">Book A Demo</h1>
+    </div>
+    <form
+      class="container"
+      id="demo-form"
+      action="{% url 'contact'
+      method="post"
+      id="contact_form"
+    >
+
+    
+      <div class="name">
+        <label for="name"></label>
+        <input
+          type="text"
+          placeholder="Name"
+          name="name"
+          id="name_input"
+          required
+        />
+      </div>
+      <div class="email">
+        <label for="email"></label>
+        <input
+          type="email"
+          placeholder="E-mail"
+          name="email"
+          id="email_input"
+          required
+        />
+      </div>
+      <div class="organisation">
+        <label for="name"></label>
+        <input
+          type="text"
+          placeholder="Organization"
+          name="organization"
+          id="organisation_input"
+          required
+        />
+      </div>
+
+      <div class="title">
+        <label for="name"></label>
+        <input
+          type="text"
+          placeholder="Title"
+          name="title"
+          id="title_input"
+          required
+        />
+      </div>
+      <div class="message">
+        <label for="message"></label>
+        <textarea
+          name="message"
+          placeholder="message"
+          id="message_input"
+          cols="30"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+
+      <div class="subject">
+        <label for="subject"></label>
+        <select
+          placeholder="Subject line"
+          name="subject"
+          id="subject_input"
+          required
+        >
+          <option value="">I work in the field of...</option>
+          <option value="Academic Research">Academic Research</option>
+          <option value="Contract Research Organisation"
+            >Contract Research Organisation</option
+          >
+          <option value="Pharmaceutical Company"
+            >Pharmaceutical Company</option
+          >
+          <option value="Biotechnology Company">Biotechnology Company</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="consent">
+        <input type="checkbox" id="" name="consent" value="yes" required />
+        <label for="consent"
+          >I consent to my personal data being stored by Sciar Company Ltd (we
+          do not sell or otherwise release your personal data to third parties
+          or use the information for marketing purposes)</label
+        >
+      </div>
+
+      <div class="submit">
+        <input type="submit" value="Send Message" id="form_button" />
+      </div>
+    </form>
+    <div class="containerTwo hidden">
+		<h1>3rd party application missing</h1>
+	</div>
+    
+    <script src='js/switch.js'></script>
+    <!-- // End form -->
+    </div>
+  </div>
+</div>
+<script src="js/sliderapp.js"></script>
+<script src="js/script.js"></script>
+<script src="js/app.js"></script>
+<script src="js/switch.js"></script>

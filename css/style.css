@@ -1,0 +1,760 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+  font-family: "Quicksand";
+  font-weight: normal;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+:root {
+  --main-og-color: rgb(255, 154, 21);
+}
+
+/* html {
+  font-family: "Quicksand light", Helvetica, sans-serif;
+  font-style: none;
+  font-weight: normal;
+  margin: 0px;
+} */
+
+body {
+  background: #1d303a;
+  line-height: 1.4;
+}
+
+/* HEADER */
+
+.header {
+  background: var(--primary);
+  display: grid;
+  grid-gap: 30px;
+  /* height: 50vh; */
+  padding-bottom: 100px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem;
+  align-items: center;
+  justify-items: center;
+  /* border-bottom: 1px solid white; */
+  height: 950px;
+  text-align: left;
+}
+
+#logo {
+  height: 60vh;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+#copilotheader {
+  font-size: 6rem;
+  color: var(--main-og-color);
+  padding-bottom: 30px;
+}
+
+#workflow {
+  font-size: 3rem;
+}
+
+.orange {
+  color: var(--main-og-color);
+}
+
+/* HEADER */
+
+/* Slider section */
+
+.slidersection {
+  padding: 20px;
+  display: grid;
+  /* flex-direction: column; */
+  text-align: justify;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-gap: 1em;
+}
+
+.slidersection > * {
+  position: relative;
+  z-index: 2;
+}
+
+.slidersection:nth-of-type(1) {
+  background-color: #1d303a;
+  background-image: url("static/images/otherphotos/sciar_background_photo_lab.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slidersection:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: radial-gradient(#1d303a 40%, transparent 55%); */
+  background-size: 6px;
+}
+
+.sectiontext {
+  padding: 10%;
+  text-align: center;
+  color: var(--main-og-color);
+  transition: ease-in-out 0.3s;
+}
+
+.slidetext {
+  color: var(--main-og-color);
+}
+
+.sliderSection-2 {
+  padding: 20px;
+  display: grid;
+  flex-direction: column;
+  text-align: justify;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* grid-gap: 1em; */
+}
+
+.sliderSection-2 > * {
+  position: relative;
+  z-index: 2;
+}
+
+.sliderSection-2:nth-of-type(1) {
+  /* background-color: #1d303a; */
+  background-image: url(otherphotos/nasa-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.sliderSection-2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: radial-gradient(#1d303a 40%, transparent 55%); */
+  background-image: url(ball_pattern_10.svg);
+  background-size: 5px;
+}
+
+.sectiontext-2 {
+  padding: 10%;
+  padding-top: 2%;
+  text-align: center;
+  color: var(--main-og-color);
+  transition: ease-in-out 0.3s;
+}
+
+#geminilogo {
+  height: 125px;
+}
+
+#buttonleft,
+#buttonright {
+  background-image: url(arrow.svg);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: white solid 0.05rem;
+  border-radius: 40px;
+  height: 20px;
+  width: 20px;
+  padding: 40px;
+}
+
+#buttonleft:hover,
+#buttonright:hover {
+  background-image: url(arrow_2.svg);
+  transition: ease-in-out 0.6;
+}
+
+#buttonright {
+  transform: rotate(180deg);
+}
+
+#buttonleft:hover,
+#buttonright:hover {
+  transition: linear 0.2s;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--main-og-color);
+}
+
+/* Slider section */
+
+/* NAVBAR */
+
+/* NAVBAR */
+
+h2 {
+  font-size: 4vh;
+  color: var(--main-og-color);
+  padding-top: 0vh;
+  padding-bottom: 4vh;
+}
+
+p {
+  color: white;
+  padding-bottom: 7vh;
+}
+
+.button {
+  color: white;
+  font-size: 17px;
+  background-color: transparent;
+  margin-top: 4rem;
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  border: none;
+  border: 1px white solid;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--main-og-color);
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--main-og-color);
+  transition: linear 0.2s;
+  /* border: 1px solid; */
+}
+
+.btn {
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Navigation */
+
+/* Top Container */
+
+/* Showcase */
+
+/* Top Box */
+
+/* Boxes */
+section {
+  height: 43rem;
+}
+
+/* Info */
+.info {
+  background: var(--primary);
+  display: grid;
+  grid-gap: 30px;
+  /* height: 50vh; */
+  padding-bottom: 100px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem;
+  align-items: center;
+  justify-items: center;
+  /* border-bottom: 1px solid white; */
+}
+
+.info-2 {
+  background: #070b0e;
+  display: grid;
+  grid-gap: 30px;
+  /* height: 50vh; */
+  padding-bottom: 100px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem;
+  align-items: center;
+  justify-items: center;
+  margin: 20px;
+}
+
+.info-3 {
+  display: grid;
+  grid-gap: 30px;
+  /* height: 50vh; */
+  padding-bottom: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem;
+  align-items: flex-start;
+  justify-items: center;
+  margin: 20px;
+  text-align: center;
+  height: 1100px;
+}
+
+.info-3 a {
+  margin: 0.2vh;
+}
+
+.info-3 p {
+  margin: 0vh;
+}
+
+/* #team_image { */
+
+/* For industry partnerships */
+
+#symbol-1,
+#symbol-2,
+#symbol-3 {
+  align-items: center;
+  justify-items: center;
+  height: 20vh;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #526169;
+  background: #1d303a;
+}
+
+::selection {
+  color: #526169;
+  background: #1d303a5d;
+}
+
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+  section {
+    height: 32rem;
+  }
+  .header {
+    height: 900px;
+  }
+
+  #copilotheader {
+    font-size: 4rem;
+    color: var(--main-og-color);
+    padding-bottom: 30px;
+  }
+
+  #workflow {
+    font-size: 2.5rem;
+  }
+}
+/* Portfolio */
+
+/* Footer */
+@media (max-width: 883px) {
+  .info-3 {
+    left: 50px;
+  }
+
+  .button {
+    color: white;
+    font-size: 14px;
+    background-color: transparent;
+    margin-top: 4rem;
+    padding: 0.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 2rem;
+  }
+
+  #copilotheader {
+    font-size: 3rem;
+    color: var(--main-og-color);
+    padding-bottom: 30px;
+  }
+
+  #workflow {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 812px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .header {
+    height: 1000px;
+    text-align: center;
+  }
+
+  .spacer-two {
+    height: 100px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+  section {
+    height: 44rem;
+  }
+  /* section {
+    height: 40rem;
+  } */
+  .spacer-two {
+    height: 30vh;
+  }
+
+  #researchcommunity {
+    padding-top: 0vh;
+  }
+
+  img {
+    padding-top: 13vh;
+    padding-bottom: 5vh;
+  }
+
+  .sliderSection-2 {
+    height: 900px;
+  }
+
+  .sectiontext-2 {
+    padding: 2%;
+    padding-top: 0%;
+    text-align: center;
+    color: var(--main-og-color);
+    transition: ease-in-out 0.3s;
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+    /* grid-row-end: 1; */
+    height: 1000px;
+  }
+
+  #headertext {
+    grid-row-start: 2;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+
+  .info-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .info-2 {
+    display: block;
+    text-align: center;
+    margin: auto;
+    height: 800px;
+  }
+
+  .spacer {
+    height: 35vh;
+  }
+
+  /* #team_image {
+  } */
+
+  .slidersection {
+    padding: 20px;
+    display: grid;
+    /* flex-direction: column; */
+    text-align: justify;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-gap: 1em;
+  }
+
+  .slidersection:nth-of-type(1) {
+    background-color: #1d303a;
+    /* background-image: url(sciar_background_photo_lab.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .sectiontext {
+    padding: 10%;
+    text-align: center;
+    color: var(--main-og-color);
+    transition: ease-in-out 0.3s;
+  }
+
+  .sectiontext h2 {
+    font-size: 3vh;
+  }
+
+  .slidetext {
+    color: var(--main-og-color);
+  }
+
+  #buttonleft,
+  #buttonright {
+    padding: 30px;
+  }
+
+  #symbol-1 {
+    grid-row-start: 1;
+  }
+  #rc {
+    grid-row-start: 2;
+  }
+  #rcp {
+    grid-row-start: 3;
+  }
+
+  #rca {
+    grid-row-start: 4;
+  }
+
+  #symbol-2 {
+    grid-row-start: 5;
+  }
+  #ip {
+    grid-row-start: 6;
+  }
+  #ipp {
+    grid-row-start: 7;
+  }
+
+  #ipa {
+    grid-row-start: 8;
+  }
+
+  #geminilogo {
+    height: 150px;
+    padding: 0;
+  }
+
+  /* #rc,
+  #symbol-1,
+  #rcp {
+    grid-row-start: 1;
+  }
+
+  #ip,
+  #symbol-2,
+  #ipp {
+    grid-row-start: 2;
+  }
+
+  #fi,
+  #symbol-3,
+  #fip {
+    grid-row-start: 1;
+  } */
+
+  #symbol-1,
+  #symbol-2,
+  #symbol-3 {
+    height: 30vh;
+  }
+
+  .info-3 {
+    display: grid;
+    /* height: 50vh; */
+    grid-template-columns: 1fr;
+    padding: 4rem;
+    padding-bottom: 10px;
+
+    /* align-items: center; */
+    justify-items: center;
+    margin: 20px;
+    text-align: center;
+    height: 2700px;
+  }
+
+  .info-3hide {
+    visibility: visible;
+  }
+
+  .symbol,
+  .symbolTwo,
+  .symbolThree {
+    height: 10vh;
+  }
+
+  .symbol {
+    height: 13vh;
+
+    background-size: 13%;
+  }
+  .symbolTwo {
+    height: 18vh;
+
+    background-size: 16%;
+  }
+
+  .symbolThree {
+    height: 20vh;
+    background-size: 14%;
+  }
+
+  .symbolThree:hover {
+    height: 20vh;
+    background-size: 14%;
+  }
+
+  .symbolTwo:hover {
+    height: 18vh;
+    background-size: 16%;
+  }
+  .symbol:hover {
+    height: 13vh;
+    background-size: 13%;
+  }
+}
+
+@media (max-width: 600px) {
+  .spacer {
+    height: 19vh;
+  }
+
+  img {
+    margin: 0;
+  }
+
+  h2 {
+    padding-top: 6vh;
+  }
+
+  .info-2 {
+    padding: 0;
+  }
+
+  .info-2 p {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #buttonleft,
+  #buttonright {
+    background-image: url(arrow.svg);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1d303a00;
+    border: white solid 0.05rem;
+    border-radius: 40px;
+    height: 10px;
+    width: 10px;
+    padding: 25px;
+  }
+
+  #buttonleft:hover,
+  #buttonright:hover {
+    background-image: url(arrow_2.svg);
+    transition: ease-in-out 0.6;
+  }
+
+  #buttonright {
+    transform: rotate(180deg);
+  }
+}
+@media only screen and (max-width: 478px) {
+  .sliderSection-2 {
+    height: 1000px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .sectiontext h2 {
+    font-size: 2.2vh;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .button {
+    color: white;
+    font-size: 14px;
+    margin-top: 4rem;
+    padding: 0.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .info-2 {
+    height: 640px;
+  }
+
+  .info-3 {
+    display: grid;
+    /* height: 50vh; */
+    grid-template-columns: 1fr;
+    padding: 4rem;
+    padding-bottom: 10px;
+
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .sliderSection-2 {
+    height: 1100px;
+  }
+
+  .button {
+    color: white;
+    font-size: 12px;
+    margin-top: 6rem;
+    padding: 0.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #rcp,
+  #ipp,
+  #fip {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 261px) {
+  .sliderSection-2 {
+    height: 1200px;
+  }
+}
+
+@media only screen and (max-width: 261px) {
+  .sliderSection-2 {
+    height: 1300px;
+  }
+}
