@@ -16,7 +16,7 @@
 ## Frontend for A life science startup company.
 
 * I've built and designed this frontend using regular html, javascript and css without using any external libraries. 
-* I've built backend for this project using Python Django, and deployed it to Amazon Web Services.
+* I've built the backend for this project using Python Django, and deployed it to Amazon Web Services.
 * The design assets are either produced by me or by our team members under my direction.
 
 ## Other details:
